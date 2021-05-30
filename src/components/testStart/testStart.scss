@@ -1,0 +1,36 @@
+@import '../common/projectConstants.scss';
+
+.testStart {
+
+    h2 {
+        padding: 20rem;
+        font-size: 30rem;
+    }
+
+    .timeDropDown {
+        font-size: 20rem;
+        padding-bottom: 20rem;
+
+        label {
+            padding-right: 20rem;
+        }
+    
+        select {
+            color: $color-grey-light;
+            padding: 8rem 12rem;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 1rem 2rem $shadow-color;
+            border-bottom: 3px solid $color-primary-dark;
+            background-color: $color-primary-light-1;
+    
+            :focus {
+                border-bottom: 3px solid transparent;
+            }
+        }
+    }
+
+    .startTestButton {
+        margin: 20rem;
+    }
+}

@@ -1,0 +1,23 @@
+@import '../projectConstants.scss';
+
+.actionButton {
+    font-size: 16rem;
+    padding: 10rem 40rem;
+    background-color: $color-primary-dark;
+    color: $color-off-white;
+    border: none;
+    outline: none;
+    box-shadow: 0 1px 5rem $shadow-color;
+    border-radius: 20rem;
+    transition: all 0.2s ease;
+
+    &:hover {
+        box-shadow: 0 3px 10rem $shadow-color;
+        transform: translateY(-3px);
+    }
+
+    &:active {
+        box-shadow: 0 1px 3rem $shadow-color;
+        transform: translateY(1px);
+    }
+}

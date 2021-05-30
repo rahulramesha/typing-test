@@ -1,0 +1,21 @@
+.testLayout {
+    display: flex;
+    justify-content: center;
+    padding-top: 30rem;
+    overflow-x: hidden;
+
+    .testContent {
+        display: flex;
+        flex-direction: column;
+
+        .testControls {
+            display: flex;
+            padding: 0 20rem 20rem 20rem;
+            justify-content: space-around;
+
+            .closeButton {
+                padding: 5rem 30rem;
+            }
+        }
+    }
+}

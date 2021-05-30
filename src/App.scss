@@ -1,0 +1,13 @@
+@import './components/common/projectConstants.scss';
+
+.App {
+  text-align: center;
+  padding: 40rem;
+
+  h1 {
+    color: $color-primary-dark;
+    padding: 40rem;
+    font-size: 40rem;
+  }
+  
+}

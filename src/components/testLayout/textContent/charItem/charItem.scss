@@ -1,0 +1,26 @@
+@import '../../../common/projectConstants.scss';
+
+.charItem {
+    font-size: 36rem;
+    font-weight: 700;
+    min-width: 35rem;
+
+    &.correct {
+        color: $color-green;
+    }
+
+    &.wrong {
+        color: $color-red;
+    }
+
+    &.notTyped {
+        color: $color-grey-light;
+    }
+
+    &.blink {
+        color: $color-off-white;
+        background-color: $color-primary-light;
+    }
+
+}
+ 
