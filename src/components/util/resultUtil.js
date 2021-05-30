@@ -16,6 +16,7 @@ export function getResult(charListData){
 
 function getWordsFromCharList(charListData) {
     const charList = charListData.list.filter(charData => charData.isTyped)
+    const targetChar = charListData.list.filter(charData => charData.isOnTarget)
     const words = []
     
     if(!charList.length) return words
@@ -32,7 +33,8 @@ function getWordsFromCharList(charListData) {
         }
     }
 
-    words.push(word)
+    if(targetChar.length === 1 && targetChar[0].isSpace)
+        words.push(word)
 
     return words
 }
