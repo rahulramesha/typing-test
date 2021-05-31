@@ -29,6 +29,8 @@ export function handleBackspace(charListData) {
 
     let { currentId, list, words } = charListData
 
+    if(currentId === 0) return charListData
+
     list[currentId].isOnTarget = false
 
     currentId--
